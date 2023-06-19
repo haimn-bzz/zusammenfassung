@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='style.css'>
+    <title>LU06.A02 - Buch</title>
+</head>
+<body>
+<nav>
+    <button class='1'>LU1</button>
+    <button class='2'>LU2</button>
+    <button class='3'>LU3</button>
+    <button class='4'>LU4</button>
+    <button class='5'>LU5</button>
+    <button class='6'>LU6</button>
+    <button class='7'>LU7</button>
+</nav>
+<form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+
+    <label for='buchtitel'>Buchtitel</label>
+    <input id='buchtitel' name='buchtitel' type='text' minlength='2' maxlength='30' required><br>
+
+    <label for='autoren'>Autoren</label>
+    <input id='autoren' name='autoren' type='text' minlength='5' maxlength='40'><br>
+
+    <label for='preis'>Preis</label>
+    <input id='preis' name='preis' type='number' step="0.05" min='0.05' max='99.95'><br>
+
+    <label for='erscheinungsdatum'>Erscheinungsdatum</label>
+    <input id='erscheinungsdatum' name='erscheinungsdatum' type='date'><br>
+
+    <label for='auflage'>Auflage</label>
+    <input id='auflage' name='auflage' type='range' min='1' max='9'><br>
+
+    <button type='reset'>Reset</button>
+    <button type='submit'>Submit</button>
+</form>
+<script src='script.js'></script>
+</body>
+</html>

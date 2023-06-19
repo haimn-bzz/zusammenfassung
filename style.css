@@ -1,0 +1,8 @@
+button{
+    background-color: aqua !important;
+    color: red !important;
+}
+.active{
+    background-color: red !important;
+    color: aqua !important;
+}
